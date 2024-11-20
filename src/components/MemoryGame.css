@@ -1,0 +1,65 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Memory Board */
+  .memory-board {
+    display: grid;
+    grid-template-columns: repeat(4, 120px); /* 4 cartas por fila */
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para las cartas */
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  /* Efecto de rotación en las cartas al hacer clic */
+  .card:active {
+    transform: scale(0.98);
+  }
+  
+  /* Mostrar el símbolo de la carta cuando está voltea */
+  .card:disabled {
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /* Texto cuando no está volteada */
+  .card {
+    color: transparent;
+  }
+  
+  /* Estilos de victoria */
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
